@@ -1,4 +1,4 @@
-# SoftwareCarpentryFinalProject
+# Software Carpentry Final Project
 ## Section 1 Initializing deck
 1. Creating 4 decks with 52 cards
 2. Randomly shuffle decks in the beginning
