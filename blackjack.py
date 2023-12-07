@@ -9,11 +9,16 @@ import pygame
 pygame.init()
 
 # Constants
-WIDTH, HEIGHT = 1000, 1000
+WIDTH, HEIGHT = 500, 500
+black = (0, 0, 0)
+white = (255, 255, 255)
+DARK = (100, 100, 100)      # Dark color
+LIGHT = (170, 170, 170)     # Light color
+red = (255, 0, 0)
+font = pygame.font.SysFont('Times New Roman', 35)
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Blackjack game")
-print("yes")
 
 # Variable to determine if the game is running
 running = True
@@ -23,7 +28,15 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    screen.fill((255, 255, 255))
+    screen.fill(white)
+
+    # Draw buttons for betting options
+    pygame.draw.rect(screen, red, [50, 250, 100, 40], 1, 1)
+    pygame.draw.rect(screen, red, [50, 150, 100, 40], 1, 1)
+    pygame.draw.rect(screen, red, [50, 50, 100, 40], 1, 1)
+
+    # Update portion of the screen
+    pygame.display.flip()
 
 # Quit the module
 pygame.quit()
