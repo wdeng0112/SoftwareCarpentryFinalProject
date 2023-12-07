@@ -24,3 +24,7 @@
 4. For all other players, calculate bets based on card values
 ## Section 6
 1. Use pygame module to create GUI for the game
+2. Create interface with buttons including chip management, difficulty selection, player selection etc.
+3. Create interface for betting options
+4. Create interface for game round (hit/stand/double etc.)
+5. Load unique images of 52 cards and be able to display the hand
